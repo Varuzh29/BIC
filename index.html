@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="initial-scale=1, width=device-width, height=device-height">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="panel">
+            <div class="title">
+                <h1>BIC</h1>
+                <button class="normal" id="add-button"><span class="material-symbols-rounded">
+                        add
+                    </span></button>
+            </div>
+            <div class="content-container" id="content-container">
+                <div class="content" id="content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <div class="popup-element">
+                <div class="popup-title">
+                    Name: 
+                </div>
+                <input id="name" size="10" type="text" value="Investment" onclick="this.select();">
+            </div>
+            <div class="popup-element">
+                <div class="popup-title">
+                    Income: 
+                </div>
+                <input id="income" size="10" type="text" value="10" onclick="this.select();">
+            </div>
+            <div class="popup-element">
+                <div class="popup-title">
+                    Price: 
+                </div>
+                <input id="price" size="10" type="text" value="100" onclick="this.select();">
+            </div>
+            <div class="popup-element">
+                <button class="positive" id="ok-button">OK</button>
+                <button class="negative" id="delete-button">Delete</button>
+                <button class="negative" id="cancel-button">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

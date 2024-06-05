@@ -1,0 +1,361 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 24
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+    --main-bg-color: hsl(225, 25%, 15%);
+    --panel--bg--color: hsl(225, 25%, 20%);
+    --title--color: hsl(225, 70%, 83%);
+    --normal--button--color: hsl(225, 25%, 30%);
+    --normal--button--color--hovered: hsl(225, 25%, 40%);
+    --result--color: hsl(125, 100%, 63%);
+    --income--color: hsl(40, 100%, 63%);
+}
+
+body {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    width: 100svw;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
+
+.popup-container {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: #0000007c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100svh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.popup {
+    border-color: var(--normal--button--color--hovered);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 24px;
+    background-color: var(--panel--bg--color);
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    padding: 24px;
+}
+
+.popup-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--title--color);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 4px;
+}
+
+.popup-title {
+    color: var(--title--color);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px;
+}
+
+input {
+    outline: none;
+    border-radius: 12px;
+    border-color: hsl(225, 70%, 83%, 0);
+    border-width: 2px;
+    background-color: var(--normal--button--color);
+    color: var(--title--color);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 4px;
+    min-width: 50px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-style: solid;
+    border-color: var(--title--color);
+}
+
+.panel {
+    border-radius: 24px;
+    background-color: var(--panel--bg--color);
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    padding: 24px;
+    height: 100%;
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 48px;
+}
+
+.title h1 {
+    color: var(--title--color);
+    font-size: 30px;
+}
+
+button.normal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin: 4px;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--normal--button--color);
+    color: var(--title--color);
+    font-size: 38px;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+button.positive {
+    flex-grow: 1;
+    background-color: hsl(125, 100%, 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 24px;
+    padding: 12px;
+    margin: 4px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+button.negative {
+    flex-grow: 1;
+    background-color: hsl(0, 100%, 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 24px;
+    padding: 12px;
+    margin: 4px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+button.negative:hover {
+    cursor: pointer;
+}
+
+button.negative:active {
+    cursor: pointer;
+}
+
+button.positive:hover {
+    cursor: pointer;
+}
+
+button.positive:active {
+    cursor: pointer;
+}
+
+button.normal:hover {
+    cursor: pointer;
+    background-color: var(--normal--button--color--hovered);
+}
+
+button.normal:active {
+    cursor: pointer;
+    background-color: var(--normal--button--color);
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.item {
+    background-color: var(--normal--button--color);
+    border-radius: 16px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    transition-duration: 0.2s;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: var(--normal--button--color--hovered);
+}
+
+.item:active {
+    cursor: pointer;
+    background-color: var(--normal--button--color);
+}
+
+.item-name {
+    color: var(--title--color);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 150px;
+    overflow: hidden;
+}
+
+.item-income {
+    color: var(--income--color);
+    font-size: 16px;
+    padding: 4px;
+}
+
+.item-price {
+    color: var(--title--color);
+    font-size: 16px;
+    padding: 4px;
+}
+
+.item-result {
+    color: var(--result--color);
+    font-size: 16px;
+    padding: 4px;
+}
+
+input {
+    width: fit-content;
+}
